@@ -1,0 +1,32 @@
+:root {
+  /* University Modern Palette */
+
+  --primary: #2563EB;
+  --secondary: #1E293B;
+  --accent: #10B981;
+
+  --background: #F1F5F9;
+  --surface: #FFFFFF;
+
+  --text-primary: #020617;
+  --text-secondary: #475569;
+
+  --border: #E2E8F0;
+}
+
+body {
+    font-family: sans-serif;
+    padding-left: 300px;
+    padding-bottom: 50px;
+    background-color: var(--background);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 50px;
+    }
+}

@@ -1,0 +1,287 @@
+:root {
+  /* University Modern Palette */
+
+  --primary: #2563EB;
+  --secondary: #1E293B;
+  --accent: #10B981;
+
+  --background: #F1F5F9;
+  --surface: #FFFFFF;
+
+  --text-primary: #020617;
+  --text-secondary: #475569;
+
+  --border: #E2E8F0;
+}
+
+.create .card {
+    background-color: var(--surface);
+    width: 800px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.create header {
+    background-color: var(--primary);
+    padding: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: var(--surface);
+}
+
+.create .input-div {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.create .input-div p {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.create .input-div input {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 17px;
+    border: solid 2px var(--border);
+    border-radius: 10px;
+}
+
+.create .input-div textarea {
+    width: 100%;
+    height: 200px;
+    border: solid var(--border) 2px;
+    border-radius: 10px;
+    padding: 15px 10px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.create .help {
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+
+.create .time-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.create .choose {
+  padding-left: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.create .difficulty-div {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.create .difficulty-div span {
+    font-size: 30px;
+}
+
+.create .difficulty-div button:hover {
+    padding-bottom: 40px;
+}
+
+.create .green {
+    background-color: var(--surface);
+    font-size: 20px;
+    color: var(--accent);
+    padding-bottom: 30px;
+    border: solid 3px var(--accent);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.create .green.active {
+    color: var(--surface);
+    background-color: var(--accent);
+}
+
+.create .yellow {
+    background-color: var(--surface);
+    font-size: 20px;
+    color: #FBBF24;
+    padding-bottom: 30px;
+    border: solid 3px #FBBF24;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.create .yellow.active {
+    color: var(--surface);
+    background-color: #FBBF24;
+}
+
+.create .red {
+    background-color: var(--surface);
+    font-size: 20px;
+    color: #EF4444;
+    padding-bottom: 30px;
+    border: solid 3px #EF4444;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.create .red.active {
+    color: var(--surface);
+    background-color: #EF4444;
+}
+
+.create .create-btn-div {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.create .create-btn {
+    background-color: var(--primary);
+    width: 100%;
+    border: none;
+    color: var(--surface);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.create .error {
+  color: red;
+  text-align: center;
+}
+
+.create .track {
+    text-align: center;
+    padding-bottom: 50px;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+
+  /* Card width becomes fluid instead of fixed */
+
+  .create .card {
+    width: 92%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+  }
+
+  /* Header adjustments */
+
+  .create header {
+    padding: 20px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  .create header h1 {
+    font-size: 22px;
+  }
+
+  .create header p {
+    font-size: 14px;
+  }
+
+  /* Input container padding reduced */
+
+  .create .input-div {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .create .input-div p {
+    font-size: 16px;
+  }
+
+  /* Inputs scale nicely */
+
+  .create .input-div input {
+    font-size: 16px;
+    padding: 13px 9px;
+  }
+
+  /* Textarea scaling */
+
+  .create .input-div textarea {
+    height: 180px;
+    font-size: 16px;
+    padding: 13px 9px;
+  }
+
+  .create .help {
+    font-size: 14px;
+  }
+
+  /* Time grid stays grid — just spacing trimmed */
+
+  .create .time-div {
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  /* Difficulty buttons */
+
+  .create .difficulty-div {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    gap: 12px;
+  }
+
+  .create .difficulty-div button {
+    font-size: 16px;
+    padding-bottom: 22px;
+  }
+
+  .create .difficulty-div span {
+    font-size: 24px;
+  }
+
+  /* Create button spacing */
+
+  .create .create-btn-div {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .create .create-btn {
+    font-size: 16px;
+    padding: 16px 0;
+  }
+
+  /* Footer text */
+
+  .create .track {
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 35px;
+  }
+
+}

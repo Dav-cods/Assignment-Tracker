@@ -1,0 +1,277 @@
+:root {
+  /* University Modern Palette */
+
+  --primary: #2563EB;
+  --secondary: #1E293B;
+  --accent: #10B981;
+
+  --background: #F1F5F9;
+  --surface: #FFFFFF;
+
+  --text-primary: #020617;
+  --text-secondary: #475569;
+
+  --border: #E2E8F0;
+}
+
+.dash h1 {
+  color: var(--text-primary);
+}
+
+.dash .date {
+  color: var(--text-secondary);
+}
+
+.dash .today {
+  background-color: var(--surface);
+  padding: 30px;
+  border: solid var(--border) 2px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+/* THE CSS FOR 
+THE WHAT IS DUE 
+TODAY SECTION  */
+
+.dash .today-task {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  align-items: center;
+  border: solid var(--border) 2px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.dash .today-task .name {
+  font-weight: bold;
+  color: var(--text-primary);
+  font-size: 18px;
+}
+.dash .today-task .time {
+  color: var(--text-secondary);
+  font-size: 18px;
+}
+
+.difficulty.easy {
+  color: var(--surface);
+  background-color: var(--accent);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  justify-self: center;
+}
+.difficulty.medium {
+  color: var(--surface);
+  background-color: #FBBF24;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  justify-self: center;
+}
+.difficulty.hard {
+  color: var(--surface);
+  background-color: #EF4444;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  justify-self: center;
+}
+.dash .circle-tick {
+  font-size: 50px;
+  background-color: var(--accent);
+  width: fit-content;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+.dash .no-tasks {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 18px;
+}
+
+/* THE CSS FOR 
+THE MOST PRESSING 
+TASK SECTION */
+
+.dash .pressing {
+  background-color: var(--primary);
+  padding: 30px;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 30px;
+}
+.dash .pressing .details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: rgb(221, 219, 219);
+}
+.dash .pressing .name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.dash .pressing .time-remaining-div {
+  background-color: #5b89ec;
+  padding: 20px;
+  border-radius: 15px;
+}
+.dash .pressing .clock {
+  display: flex;
+  gap: 30px;
+}
+.dash .clock .value {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.dash .clock .label {
+  color: rgb(221, 219, 219);
+  font-size: 14px;
+}
+
+/*
+THE CSS FOR
+THE UPCOMING TASKS
+SECTION
+*/
+
+.dash .upcoming {
+  background-color: var(--surface);
+  padding: 30px;
+  border-radius: 20px;
+  border: solid var(--border) 2px;
+  margin-bottom: 30px;
+}
+.dash .upcoming .task-div {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.dash .upcoming .name {
+  font-size: 18px;
+  color: var(--text-primary);
+  padding-left: 40px;
+}
+.dash .upcoming .date {
+  font-size: 18px;
+  justify-self: end;
+  padding-right: 20px;
+}
+
+/*
+THE CSS FOR
+THE OVERVIEW SECTION
+*/
+
+.dash .overview {
+  background-color: var(--surface);
+  padding: 30px;
+  border-radius: 20px;
+  border: solid var(--border) 2px;
+  margin-bottom: 30px;
+}
+.dash .overview-item {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.dash .overview .total {
+  background-color: #d7f6fc;
+}
+.overview .total .label {
+  font-size: 20px;
+  color: var(--text-primary);
+}
+.overview .total .value {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.dash .overview .easy {
+  background-color: #d7fced;
+}
+.overview .label {
+  color: var(--text-secondary);
+}
+.dash .overview .medium {
+  background-color: #f5fcd7;
+}
+.dash .overview .hard {
+  background-color: #fcd7d7;
+}
+.overview .easy .value {
+  background-color: #10B981;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+.overview .medium .value {
+  background-color: #b6b910;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+.overview .hard .value {
+  background-color: #b91010;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+.dash .overview-item .value {
+  justify-self: end;
+}
+.dash .overview .due-div {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  align-items: center;
+}
+.dash .overview .due-div .due-label {
+  color: var(--text-secondary);
+  font-size: 20px;
+}
+.dash .overview .due-div .due-value {
+  justify-self: end;
+  color: var(--primary);
+  font-size: 25px;
+}
+
+/*
+THE CSS FOR
+THE OVERDUE TASKS
+SECTION
+*/
+
+.dash .overdue {
+  background-color: var(--surface);
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  border: solid lightpink 2px;
+}
+.dash .overdue .overdue-item {
+  background-color: rgb(255, 238, 238);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: solid lightpink 1px;
+}
+.overdue .overdue-item .name {
+  font-weight: bold;
+  font-size: 20px;
+}
+.overdue .overdue-item .days-overdue {
+  background-color: #EF4444;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+}

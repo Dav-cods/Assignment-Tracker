@@ -1,0 +1,22 @@
+COLOR SCHEME===========
+
+Primary
+#2563EB  — Calm Modern Blue
+
+Secondary
+#1E293B  — Deep Slate
+
+Accent
+#10B981  — Fresh Emerald
+
+Background
+#F1F5F9  — Soft Gray
+
+Surface
+#FFFFFF  — White
+
+Text Primary
+#020617  — Near Black
+
+Text Secondary
+#475569  — Cool Gray
