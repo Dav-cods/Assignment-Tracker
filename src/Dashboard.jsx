@@ -64,7 +64,7 @@ function Dashboard ({tasks, todayTasks, mostPressingTask, undoneTasks, upcomingT
                    <p>🕗 {mostPressingTask?.realTime}</p>
                    <p className={`difficulty ${mostPressingTask?.difficulty}`}>{mostPressingTask?.difficulty}</p>
                </div>
-               <p style={{ width: '40%', textAlign: 'center', fontFamily: 'monospace' }}>"{mostPressingTask?.details}"</p>
+               <p className='desc'>"{mostPressingTask?.details}"</p>
                <div className="time-remaining-div">
                    <p>Time Remaining</p>
                    <div className="clock">

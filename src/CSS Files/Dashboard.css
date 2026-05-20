@@ -116,6 +116,11 @@ TASK SECTION */
   font-weight: bold;
   margin-bottom: 0px;
 }
+.dash .pressing .desc {
+  width: 40%;
+  text-align: center;
+  font-family: monospace;
+}
 .dash .pressing .time-remaining-div {
   background-color: #5b89ec;
   padding: 20px;
@@ -274,4 +279,14 @@ SECTION
   padding: 10px;
   border-radius: 20px;
   color: white;
+}
+
+/* RESPONSIVE DESIGN=============
+==========================
+================== */
+
+@media (max-width: 768px) {
+  .dash .pressing .desc {
+    width: 100%;
+  }
 }

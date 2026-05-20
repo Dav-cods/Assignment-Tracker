@@ -17,9 +17,9 @@ function Navbar () {
                     <button onClick={() => {setIsOpen(false)}} className="close-btn">X</button>
                 </div>
                 <ul>
-                    <li><Link to="/">Dashboard</Link></li>
-                    <li><Link to="/create">New Assignment</Link></li>
-                    <li><Link to="/checked">Completed Tasks✅❓</Link></li>
+                    <li onClick={() => {setIsOpen(false)}}><Link to="/">Dashboard</Link></li>
+                    <li onClick={() => {setIsOpen(false)}}><Link to="/create">New Assignment</Link></li>
+                    <li onClick={() => {setIsOpen(false)}}><Link to="/checked">Completed Tasks✅❓</Link></li>
                 </ul>
             </nav>
         </div>

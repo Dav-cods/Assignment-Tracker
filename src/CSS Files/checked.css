@@ -134,3 +134,13 @@ hr {
     background-color: #d8f8ed;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .checked {
+        width: 100%;
+    }
+
+    .checked .undone-task {
+        grid-template-columns: 2fr 2fr 1fr;
+    }
+}
