@@ -140,7 +140,7 @@ hr {
         width: 100%;
     }
 
-    .checked .undone-task {
+    .checked .undone-task, .checked .done-task {
         grid-template-columns: 2fr 2fr 1fr;
     }
 }
