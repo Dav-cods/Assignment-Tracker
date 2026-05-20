@@ -257,6 +257,10 @@
     padding-bottom: 22px;
   }
 
+  .create .difficulty-div button:hover {
+    padding-bottom: 0;
+  }
+
   .create .difficulty-div span {
     font-size: 24px;
   }
