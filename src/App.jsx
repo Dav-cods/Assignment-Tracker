@@ -34,20 +34,8 @@ function App() {
   const overdueTasks = undoneTasks.filter(task => task.diff < 0);
 
   const mostPressingTask = undoneNotOverdueTasks
-  .slice() // prevents modifying original array
-  .sort((a, b) => {
-
-    // Step 1: Compare days left
-    if (a.daysLeft !== b.daysLeft) {
-      return a.daysLeft - b.daysLeft;
-    }
-
-    // Step 2: If same day, compare time
-    const timeA = new Date(`1970-01-01T${a.time}`);
-    const timeB = new Date(`1970-01-01T${b.time}`);
-
-    return timeA - timeB;
-  })[0];
+  .slice()
+  .sort((a, b) => new Date(a.due) - new Date(b.due))[0];
 
   useEffect(() => {
     const interval = setInterval(() => {
