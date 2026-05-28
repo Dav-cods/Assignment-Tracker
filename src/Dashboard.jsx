@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './CSS Files/Dashboard.css';
 
 function Dashboard ({tasks, todayTasks, mostPressingTask, undoneTasks, upcomingTasks, overdueTasks}) {
@@ -25,6 +26,29 @@ function Dashboard ({tasks, todayTasks, mostPressingTask, undoneTasks, upcomingT
             weekday:'short'
         }
     );
+
+    async function fiveMinutesLeft () {
+        if (!mostPressingTask) return;
+
+        if (mostPressingTask.minutesLeft === 5 && mostPressingTask.secondsLeft === 0) {
+            const notificationPermission = await Notification.requestPermission();
+
+            if (notificationPermission === 'granted') {
+                const registration = await navigator.serviceWorker.ready;
+
+                if (registration.active) {
+                    registration.active.postMessage({
+                        type: 'fiveMinutes',
+                        taskName: mostPressingTask.name,
+                    })
+                }
+            }
+        }
+    }
+
+    useEffect(() => {
+        fiveMinutesLeft();
+    }, [mostPressingTask?.minutesLeft, mostPressingTask?.secondsLeft]);
 
     return (
         <div className="dash">

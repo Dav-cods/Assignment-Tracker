@@ -15,7 +15,7 @@ export default defineConfig({
       },
 
       srcDir: 'src',
-      filename: 'sw.js',
+      filename: 'ServiceWorker.js',
 
       strategies: 'injectManifest',
 
